@@ -26,14 +26,14 @@ class SLL {
         }
     }
 
-    // printReverse() {
-    //     if (this.head === null) {
-    //         return null
-    //     } else {
-    //         this.next.printReverse()
-    //         console.log(this.data)
-    //     }
-    // } ------> recursive function not working
+    printReverse() {
+        if (this.head === null) {
+            return null
+        } else {
+            this.next.printReverse()
+            console.log(this.data)
+        }
+    }
 }
 
 // if yous finish addToFront early, create a second version
@@ -61,5 +61,5 @@ myFirstSLL.head = myFirstNode;
 myFirstSLL.head.next = new Node(8);
 myFirstSLL.addDataToFront(10)
 
-myFirstSLL.printReverse(myFirstSLL)
+myFirstSLL.printReverse()
 
