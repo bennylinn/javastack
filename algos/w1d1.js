@@ -28,7 +28,7 @@ class SLL {
 
     printReverse() {
         if (this.head === null) {
-            return null
+            return;
         } else {
             this.next.printReverse()
             console.log(this.data)
@@ -50,16 +50,16 @@ class Node {
 var myFirstSLL = new SLL();
 myFirstSLL.addNodeToFront(new Node(9));
 
-
-if(myFirstSLL.head){
-
-}
 // { head: {data: 7, next: {data: 8, next null}} }
 var myFirstNode = new Node(7);
 
 myFirstSLL.head = myFirstNode;
-myFirstSLL.head.next = new Node(8);
-myFirstSLL.addDataToFront(10)
+myFirstSLL.addNodeToFront(new Node(7));
+myFirstSLL.addNodeToFront(new Node(10));
+myFirstSLL.addNodeToFront(new Node(13));
+myFirstSLL.addNodeToFront(new Node(16));
+myFirstSLL.addNodeToFront(new Node(21));
+console.log(myFirstSLL);
 
-myFirstSLL.printReverse()
-
+// myFirstSLL.printReverse()
+myFirstSLL.printReverse();
