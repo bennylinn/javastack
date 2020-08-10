@@ -26,12 +26,11 @@ class SLL {
         }
     }
 
-    printReverse() {
-        if (this.head === null) {
-            return;
-        } else {
-            this.next.printReverse()
-            console.log(this.data)
+    printReverse(current) {
+        if (current === undefined) current = this.head;
+        if (current !== null) {
+            this.printReverse(current.next)
+            console.log(current.data)
         }
     }
 }
@@ -48,13 +47,8 @@ class Node {
 
 
 var myFirstSLL = new SLL();
-myFirstSLL.addNodeToFront(new Node(9));
-
-// { head: {data: 7, next: {data: 8, next null}} }
 var myFirstNode = new Node(7);
-
 myFirstSLL.head = myFirstNode;
-myFirstSLL.addNodeToFront(new Node(7));
 myFirstSLL.addNodeToFront(new Node(10));
 myFirstSLL.addNodeToFront(new Node(13));
 myFirstSLL.addNodeToFront(new Node(16));
