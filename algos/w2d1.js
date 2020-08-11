@@ -109,7 +109,9 @@ class slStack {
 // you may use one stack or array as additional storage
 // the given stack must be returned back to it's original order
 // you may only use public stack methods push pop peek isempty
-function countStack(stack){}
+function countStack(stack){
+    
+}
 
 var myFirstSLL = new slStack();
 myFirstSLL.push(new Node(10));
