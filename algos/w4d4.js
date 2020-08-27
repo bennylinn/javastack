@@ -23,6 +23,9 @@ class BST {
     }
 
     // height
+    height() {
+
+    }
     // size
 
 
@@ -273,7 +276,18 @@ class BST {
 
         // else recurse to the left and try again
         return this.getSmallestFromSubtree(tree.left);
-    }}
+    }
+}
+
+var myBST = new BST();
+myBST.insert(new BSTNode(31))
+myBST.insert(new BSTNode(20))
+myBST.insert(new BSTNode(60))
+
+myBST.insert(new BSTNode(15))
+myBST.insert(new BSTNode(23))
+myBST.insert(new BSTNode(50))
+myBST.insert(new BSTNode(70))
 
 // https://www.cs.usfca.edu/~galles/visualization/BST.html
 // http://btv.melezinek.cz/binary-search-tree.html
